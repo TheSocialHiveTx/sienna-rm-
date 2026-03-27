@@ -3,11 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOG | Citation Fuels</title>
-    <meta name="description" content="Explore BLOG at Citation Fuels. Reliable petroleum and power solutions worldwide.">
+    <title>NEWS & INSIGHTS | Citation Fuels</title>
+    <meta name="description" content="Stay updated with the latest news, culture, and technical disciplines at Citation Fuels.">
     <link rel="canonical" href="../blog/">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Citation Fuels News & Insights",
+      "description": "Stay updated with the latest industrial news, corporate culture, and technical disciplines at Citation Fuels."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.citationfuels.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://www.citationfuels.com/blog/"
+      }]
+    }
+    </script>
 </head>
 <body>
 <header>
@@ -25,10 +52,51 @@
     </div>
 </header>
 <main>
-    <section class="hero" style="height: 40vh; min-height: 300px;">
-        <div class="container"><div class="hero-content"><h1>BLOG</h1></div></div>
+    <section class="hero" style="background-image: url('../images/footer-bg.png'); background-size: cover; background-position: center; position: relative; height: 40vh; min-height: 300px; display: flex; align-items: center; justify-content: center; color: white;">
+        <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5);"></div>
+        <div class="container" style="position: relative; z-index: 2; text-align: center;">
+            <div class="hero-content">
+                <h1 style="font-size: 3rem; margin-bottom: 0;">LATEST NEWS</h1>
+            </div>
+        </div>
     </section>
-    <section style="padding: 100px 0;"><div class="container"><h2 class="section-title">BLOG Details</h2><div class="card"><p>Information about BLOG is coming soon. Citation Fuels is committed to providing comprehensive details for all our services and divisions.</p></div></div></section>
+
+    <section style="padding: 80px 0; background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Industrial Insights & Corporate News</h2>
+            <div class="expertise-grid" style="padding: 0; background: transparent;">
+                <div class="grid-container" style="grid-template-columns: repeat(3, 1fr);">
+                    <!-- Blog 1 -->
+                    <div class="grid-card">
+                        <img src="../images/news-employs.png" alt="Citation Employs" style="height: 250px; object-fit: cover;">
+                        <div class="card-content">
+                            <h3>CITATION EMPLOYS</h3>
+                            <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">Discover the diverse talent and professional skills that drive our success.</p>
+                            <a href="../blog/citation-employs/" class="btn btn-secondary">READ MORE</a>
+                        </div>
+                    </div>
+                    <!-- Blog 2 -->
+                    <div class="grid-card">
+                        <img src="../images/news-culture.png" alt="Culture" style="height: 250px; object-fit: cover;">
+                        <div class="card-content">
+                            <h3>CULTURE</h3>
+                            <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">Commitment to operational excellence, integrity, and teamwork.</p>
+                            <a href="../blog/culture/" class="btn btn-secondary">READ MORE</a>
+                        </div>
+                    </div>
+                    <!-- Blog 3 -->
+                    <div class="grid-card">
+                        <img src="../images/news-disciplines.jpg" alt="Disciplines" style="height: 250px; object-fit: cover;">
+                        <div class="card-content">
+                            <h3>DISCIPLINES</h3>
+                            <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">A range of technical disciplines including reservoir engineering and geology.</p>
+                            <a href="../blog/disciplines/" class="btn btn-secondary">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <footer>
     <div class="container">
@@ -36,30 +104,45 @@
             <div class="footer-col">
                 <h3>Citation Fuels & Marketing LLC</h3>
                 <p style="margin-bottom: 20px; font-size: 0.9rem; color: #ccc;">Overcoming technology challenges: making the most of resources</p>
-            </div>
-            <div class="footer-col">
-                <h3>Get In Touch</h3>
-                <p style="margin-bottom: 10px; font-size: 0.9rem;"><strong>PHONE:</strong> 281-541-4104</p>
-                <p style="margin-bottom: 10px; font-size: 0.9rem;"><strong>EMAIL:</strong> INFO@CITATIONFUELS.COM</p>
-            </div>
-            <div class="footer-col">
-                <h3>Newsletter</h3>
                 <div class="social-links">
                     <a href="#">f</a><a href="#">t</a><a href="#">i</a><a href="#">y</a>
                 </div>
+            </div>
+            <div class="footer-col">
+                <h3>Get In Touch</h3>
+                <div style="margin-bottom: 20px;">
+                    <p style="margin-bottom: 5px; font-size: 0.9rem; color: var(--secondary); font-weight: 700;">PHONE:</p>
+                    <p style="font-size: 0.9rem;">281-541-4104</p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <p style="margin-bottom: 5px; font-size: 0.9rem; color: var(--secondary); font-weight: 700;">EMAIL:</p>
+                    <p style="font-size: 0.9rem;">INFO@CITATIONFUELS.COM</p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <p style="margin-bottom: 5px; font-size: 0.9rem; color: var(--secondary); font-weight: 700;">ADDRESS:</p>
+                    <p style="font-size: 0.9rem;">1400 POST OAK BLVD, STE 400, HOUSTON, TX 77056</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit" class="btn btn-secondary">Go</button>
+                </form>
             </div>
         </div>
         <div class="footer-bottom">
             <ul class="footer-nav">
                 <li><a href="../">HOME</a></li>
                 <li><a href="../about/">ABOUT</a></li>
-                <li><a href="../service/">SERVICE</a></li>
+                <li><a href="../expertise/">EXPERTISE</a></li>
                 <li><a href="../blog/">BLOG</a></li>
                 <li><a href="../contact/">CONTACT</a></li>
             </ul>
-            <p>2022 Citation Fuels & Marketing LLC. All Rights Reserved.</p>
+            <p>&copy; 2022 Citation Fuels & Marketing LLC. All Rights Reserved.</p>
         </div>
     </div>
 </footer>
 </body>
 </html>
+

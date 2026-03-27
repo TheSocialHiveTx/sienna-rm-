@@ -8,6 +8,33 @@
     <link rel="canonical" href="../expertise/">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Our Expertise",
+      "description": "Comprehensive energy solutions including Design Management, Construction, Procurement, and Safety."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.citationfuels.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Expertise",
+        "item": "https://www.citationfuels.com/expertise/"
+      }]
+    }
+    </script>
 </head>
 <body>
 <header>
@@ -25,10 +52,55 @@
     </div>
 </header>
 <main>
-    <section class="hero" style="height: 40vh; min-height: 300px;">
-        <div class="container"><div class="hero-content"><h1>EXPERTISE</h1></div></div>
+    <section class="hero" style="background-image: url('../images/footer-bg.png'); background-size: cover; background-position: center; position: relative;">
+        <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5);"></div>
+        <div class="container" style="position: relative; z-index: 2;"><div class="hero-content"><h1>EXPERTISE</h1></div></div>
     </section>
-    <section style="padding: 100px 0;"><div class="container"><h2 class="section-title">EXPERTISE Details</h2><div class="card"><p>Information about EXPERTISE is coming soon. Citation Fuels is committed to providing comprehensive details for all our services and divisions.</p></div></div></section>
+
+    <section class="intro-section">
+        <div class="container">
+            <h2>THE ONLY PROJECT PARTNER YOU NEED.</h2>
+            <p>At Citation Fuels and Marketing, we take pride in our comprehensive expertise in the petrochemical industry, with a strong focus on greenfield refinery projects. Our commitment to excellence is driven by our proficiency in the following key areas:</p>
+        </div>
+    </section>
+
+    <section class="expertise-section">
+        <div class="container">
+            <div class="expertise-grid">
+                <!-- Design Management -->
+                <div class="expertise-card">
+                    <img src="../images/designmanagement.png" alt="Design Management">
+                    <h3>Design Management</h3>
+                    <p>We excel in design management, leveraging innovative solutions to conceptualize and plan greenfield refinery projects. Our team of experienced professionals collaborates seamlessly to bring your vision to life.</p>
+                    <a href="../design-management/">Read More</a>
+                </div>
+
+                <!-- Construction -->
+                <div class="expertise-card">
+                    <img src="../images/construction.png" alt="Construction">
+                    <h3>Construction</h3>
+                    <p>With a keen eye for quality and efficiency, we manage every aspect of construction to ensure your refinery is built to the highest standards. Our dedication to precision and safety is unmatched.</p>
+                    <a href="../construction/">Read More</a>
+                </div>
+
+                <!-- Procurement -->
+                <div class="expertise-card">
+                    <img src="../images/procurement.png" alt="Procurement">
+                    <h3>Procurement</h3>
+                    <p>Our procurement expertise guarantees the timely acquisition of the best materials and resources for your project. We prioritize cost-efficiency without compromising on quality.</p>
+                    <a href="../procurement/">Read More</a>
+                </div>
+
+                <!-- Safety -->
+                <div class="expertise-card">
+                    <img src="../images/safety1.jpg" alt="Safety">
+                    <h3>Safety</h3>
+                    <p>Safety is at the core of everything we do. We implement rigorous safety protocols to protect both our team members and the environment, ensuring that every project is executed without incident.</p>
+                    <a href="../safety/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <footer>
     <div class="container">
@@ -36,16 +108,25 @@
             <div class="footer-col">
                 <h3>Citation Fuels & Marketing LLC</h3>
                 <p style="margin-bottom: 20px; font-size: 0.9rem; color: #ccc;">Overcoming technology challenges: making the most of resources</p>
+                <p style="font-size: 0.9rem; color: #aaa;">Citation is a special place that combines significant operational scale and resources with the nimbleness and focus of a close-knit organization, all built on a deeply rooted foundation of professional and personal integrity.</p>
             </div>
             <div class="footer-col">
                 <h3>Get In Touch</h3>
                 <p style="margin-bottom: 10px; font-size: 0.9rem;"><strong>PHONE:</strong> 281-541-4104</p>
                 <p style="margin-bottom: 10px; font-size: 0.9rem;"><strong>EMAIL:</strong> INFO@CITATIONFUELS.COM</p>
+                <p style="margin-bottom: 10px; font-size: 0.9rem;"><strong>ADDRESS:</strong> 1400 POST OAK BLVD, STE 400, HOUSTON, TX 77056</p>
             </div>
             <div class="footer-col">
                 <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Go</button>
+                </form>
                 <div class="social-links">
-                    <a href="#">f</a><a href="#">t</a><a href="#">i</a><a href="#">y</a>
+                    <a href="#">f</a>
+                    <a href="#">t</a>
+                    <a href="#">i</a>
+                    <a href="#">y</a>
                 </div>
             </div>
         </div>
@@ -53,7 +134,7 @@
             <ul class="footer-nav">
                 <li><a href="../">HOME</a></li>
                 <li><a href="../about/">ABOUT</a></li>
-                <li><a href="../service/">SERVICE</a></li>
+                <li><a href="../expertise/">EXPERTISE</a></li>
                 <li><a href="../blog/">BLOG</a></li>
                 <li><a href="../contact/">CONTACT</a></li>
             </ul>
