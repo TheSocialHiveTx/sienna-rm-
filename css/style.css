@@ -285,6 +285,63 @@ nav {
     color: var(--primary);
 }
 
+/* News Section */
+.news {
+    padding: 100px 0;
+    background: var(--light-bg);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.news-card {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.news-card img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.news-card-content {
+    padding: 30px;
+    text-align: left;
+}
+
+.news-card-content h4 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.news-card-content h4 a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.news-card-content h4 a:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+.news-card-content p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
 /* About Page Specifics */
 .founder-section {
     margin-bottom: 80px;
